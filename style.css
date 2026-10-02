@@ -1,0 +1,87 @@
+/* ツギイツのアイコンと同じ配色 */
+:root {
+  --brand: #00167a;
+  --brand-light: #5ce1e6;
+  --brand-pale: #c2f6ff;
+  --text: #1c1f26;
+  --sub: #5b6270;
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --border: #e3e5e9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  background: var(--brand-light);
+  padding: 20px 16px;
+}
+
+header .inner,
+main,
+footer .inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+header a {
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+main { padding: 24px 16px 40px; }
+
+h1 { color: var(--brand); font-size: 26px; line-height: 1.4; margin: 0 0 8px; }
+h2 { color: var(--brand); font-size: 19px; margin: 32px 0 8px; }
+p, li { font-size: 16px; }
+.lead { color: var(--sub); margin-top: 0; }
+.updated { color: var(--sub); font-size: 14px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+
+.app {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.app img { width: 64px; height: 64px; border-radius: 14px; flex-shrink: 0; }
+.app strong { color: var(--brand); font-size: 19px; }
+
+.links { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+.links a {
+  display: inline-block;
+  background: var(--brand);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a { color: var(--brand); }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  color: var(--sub);
+  font-size: 14px;
+}
